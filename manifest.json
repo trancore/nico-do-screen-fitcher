@@ -1,0 +1,30 @@
+﻿{
+  "manifest_version": 3,
+  "name": "NicoDoScreenFitcher",
+  "description": "ニコニコ動画の動画スクリーンを画面幅一杯に整形する",
+  "version": "1.0",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "images/logos/icon-48.png"
+  },
+  "icons": {
+    "16": "images/logos/icon-16.png",
+    "32": "images/logos/icon-32.png",
+    "48": "images/logos/icon-48.png",
+    "128": "images/logos/icon-128.png"
+  },
+  "background": {
+    "service_worker": "scripts/background.js"
+  },
+  "content_scripts": [
+    {
+      "css": ["css/style.css", "css/niconico.css"],
+      "matches": ["https://www.nicovideo.jp/watch/*"]
+    },
+    {
+      "js": ["scripts/fitcher.js"],
+      "matches": ["https://www.nicovideo.jp/watch/*"]
+    }
+  ],
+  "permissions": ["scripting", "activeTab", "storage"]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "nico-do-screen-fitcher",
+  "version": "1.0.0",
+  "scripts": {},
+  "author": "trancore",
+  "license": "MIT",
+  "devDependencies": {
+    "chrome-types": "^0.1.297"
+  }
+}

@@ -1,0 +1,14 @@
+﻿div#CommonHeader {
+  position: relative !important;
+  top: 0px !important;
+}
+
+header {
+  position: relative !important;
+  top: 0px !important;
+}
+
+section.d_grid {
+  display: block !important;
+  width: 95vw;
+}
